@@ -147,7 +147,7 @@ namespace ArdupilotMega
         //GCSViews.ConfigurationView.Setup Configuration;
         GCSViews.Simulation Simulation;
         //GCSViews.Firmware Firmware;
-        //GCSViews.Terminal Terminal;
+        GCSViews.BigTerminal BigTerminal;
 
         private Form connectionStatsForm;
         private ConnectionStats _connectionStats;
@@ -169,7 +169,7 @@ namespace ArdupilotMega
 
             strVersion = "mav " + MAVLink.MAVLINK_WIRE_PROTOCOL_VERSION;
 
-            splash.Text = "EEPIS Nanosatelit " + Application.ProductVersion + " " + strVersion;
+            splash.Text = "EEPIS Nanosatelit Ground Control System";
 
             splash.Refresh();
 
@@ -191,6 +191,7 @@ namespace ArdupilotMega
             _connectionControl.CMB_serialport.SelectedIndexChanged += this.CMB_serialport_SelectedIndexChanged;
             _connectionControl.CMB_serialport.Enter += this.CMB_serialport_Enter;
             _connectionControl.CMB_serialport.Click += this.CMB_serialport_Click;
+            _connectionControl.CMB_serialportTX.Click += this.CMB_serialportTX_Click;
             _connectionControl.TOOL_APMFirmware.SelectedIndexChanged += this.TOOL_APMFirmware_SelectedIndexChanged;
 
             _connectionControl.ShowLinkStats += (sender, e) => ShowConnectionStatsForm();
@@ -232,12 +233,17 @@ namespace ArdupilotMega
             // ** new
             _connectionControl.CMB_serialport.Items.Add("AUTO");
             _connectionControl.CMB_serialport.Items.AddRange(ArdupilotMega.Comms.SerialPort.GetPortNames());
+            _connectionControl.CMB_serialportTX.Items.AddRange(ArdupilotMega.Comms.SerialPort.GetPortNames());
             _connectionControl.CMB_serialport.Items.Add("TCP");
             _connectionControl.CMB_serialport.Items.Add("UDP");
             if (_connectionControl.CMB_serialport.Items.Count > 0)
             {
                 _connectionControl.CMB_baudrate.SelectedIndex = 7;
                 _connectionControl.CMB_serialport.SelectedIndex = 0;
+            }
+            if (_connectionControl.CMB_serialportTX.Items.Count > 0)
+            {
+                _connectionControl.CMB_serialportTX.SelectedIndex = 0;
             }
             // ** Done
 
@@ -365,6 +371,7 @@ namespace ArdupilotMega
                 MainV2.comPort.MAV.cs.raterc = 50;
                 MainV2.comPort.MAV.cs.ratesensors = 50;
                 */
+                
                 try
                 {
                     if (config["TXT_homelat"] != null)
@@ -495,7 +502,17 @@ namespace ArdupilotMega
                 _connectionControl.CMB_serialport.Text = oldport;
         }
 
-
+        private void CMB_serialportTX_Click(object sender, EventArgs e)
+        {
+            
+            string oldport = _connectionControl.CMB_serialportTX.Text;
+            _connectionControl.CMB_serialportTX.Items.Clear();
+            _connectionControl.CMB_serialportTX.Items.AddRange(ArdupilotMega.Comms.SerialPort.GetPortNames());
+            _connectionControl.CMB_serialportTX.Items.Add("NIAM");
+            if (_connectionControl.CMB_serialportTX.Items.Contains(oldport))
+                _connectionControl.CMB_serialportTX.Text = oldport;
+             
+        }
         private void MenuFlightData_Click(object sender, EventArgs e)
         {
             MyView.ShowScreen("FlightData");
@@ -531,11 +548,13 @@ namespace ArdupilotMega
                 MenuConnect_Click(sender, e);
             }
 
-            MyView.ShowScreen("Terminal");
+            MyView.ShowScreen("BigTerminal");
         }
 
         private void MenuConnect_Click(object sender, EventArgs e)
         {
+
+
             comPort.giveComport = false;
 
             // sanity check
@@ -583,7 +602,236 @@ namespace ArdupilotMega
                 }
                 catch { }
 
+                // refresh config window if needed
+                if (MyView.current != null)
+                {
+                    if (MyView.current.Name == "HWConfig")
+                        MyView.ShowScreen("HWConfig");
+                    if (MyView.current.Name == "SWConfig")
+                        MyView.ShowScreen("SWConfig");
+                }
+
                 this.MenuConnect.Image = global::ArdupilotMega.Properties.Resources.connect;
+            }
+            else
+            {
+                switch (_connectionControl.CMB_serialport.Text)
+                {
+                    case "TCP":
+                        comPort.BaseStream = new TcpSerial();
+                        break;
+                    case "UDP":
+                        comPort.BaseStream = new UdpSerial();
+                        break;
+                    case "AUTO":
+                    default:
+                        comPort.BaseStream = new Comms.SerialPort();
+                        break;
+                }
+
+                // Tell the connection UI that we are now connected.
+                _connectionControl.IsConnected(true);
+
+                // Here we want to reset the connection stats counter etc.
+                this.ResetConnectionStats();
+
+                MainV2.comPort.MAV.cs.timeInAir = 0;
+
+                //cleanup any log being played
+                comPort.logreadmode = false;
+                if (comPort.logplaybackfile != null)
+                    comPort.logplaybackfile.Close();
+                comPort.logplaybackfile = null;
+
+                try
+                {
+                    // do autoscan
+                    if (_connectionControl.CMB_serialport.Text == "AUTO")
+                    {
+                        Comms.CommsSerialScan.Scan(false);
+
+                        DateTime deadline = DateTime.Now.AddSeconds(50);
+
+                        while (Comms.CommsSerialScan.foundport == false)
+                        {
+                            System.Threading.Thread.Sleep(100);
+
+                            if (DateTime.Now > deadline)
+                            {
+                                CustomMessageBox.Show("Timeout waiting for autoscan/no mavlink device connected");
+                                _connectionControl.IsConnected(false);
+                                return;
+                            }
+                        }
+
+                        _connectionControl.CMB_serialport.Text = Comms.CommsSerialScan.portinterface.PortName;
+                        _connectionControl.CMB_baudrate.Text = Comms.CommsSerialScan.portinterface.BaudRate.ToString();
+                    }
+
+                    // set port, then options
+                    comPort.BaseStream.PortName = _connectionControl.CMB_serialport.Text;
+
+                    try
+                    {
+                        comPort.BaseStream.BaudRate = int.Parse(_connectionControl.CMB_baudrate.Text);
+                    }
+                    catch (Exception exp) { log.Error(exp); }
+
+                    // false here
+                    comPort.BaseStream.DtrEnable = false;
+                    comPort.BaseStream.RtsEnable = false;
+
+                    
+
+
+                    /*
+                    // prevent serialreader from doing anything
+                    comPort.giveComport = true;
+                    // reset on connect logic.
+                    if (config["CHK_resetapmonconnect"] == null || bool.Parse(config["CHK_resetapmonconnect"].ToString()) == true)
+                        comPort.BaseStream.toggleDTR();
+                    */
+                    comPort.giveComport = false;
+
+                    // setup to record new logs
+                    try
+                    {
+                        Directory.CreateDirectory(MainV2.LogDir);
+                        comPort.logfile = new BinaryWriter(File.Open(MainV2.LogDir + Path.DirectorySeparatorChar + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".tlog", FileMode.CreateNew, FileAccess.ReadWrite, FileShare.None));
+
+                        comPort.rawlogfile = new BinaryWriter(File.Open(MainV2.LogDir + Path.DirectorySeparatorChar + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".rlog", FileMode.CreateNew, FileAccess.ReadWrite, FileShare.None));
+                    }
+                    catch (Exception exp2) { log.Error(exp2); CustomMessageBox.Show("Failed to create log - wont log this session"); } // soft fail
+
+                    // reset connect time - for timeout functions
+                    connecttime = DateTime.Now;
+
+                    // do the connect
+                    try
+                    {
+                        comPort.Open(true);
+                    }
+                    catch
+                    {
+                        CustomMessageBox.Show(@"gak isok");
+                    }
+                    
+
+
+
+                    // detect firmware we are conected to.
+                    if (comPort.MAV.param["SYSID_SW_TYPE"] != null)
+                    {
+                        if (float.Parse(comPort.MAV.param["SYSID_SW_TYPE"].ToString()) == 10)
+                        {
+                            _connectionControl.TOOL_APMFirmware.SelectedIndex = _connectionControl.TOOL_APMFirmware.Items.IndexOf(Firmwares.ArduCopter2);
+                        }
+                        else if (float.Parse(comPort.MAV.param["SYSID_SW_TYPE"].ToString()) == 7)
+                        {
+                            _connectionControl.TOOL_APMFirmware.SelectedIndex = _connectionControl.TOOL_APMFirmware.Items.IndexOf(Firmwares.Ateryx);
+                        }
+                        else if (float.Parse(comPort.MAV.param["SYSID_SW_TYPE"].ToString()) == 20)
+                        {
+                            _connectionControl.TOOL_APMFirmware.SelectedIndex = _connectionControl.TOOL_APMFirmware.Items.IndexOf(Firmwares.ArduRover);
+                        }
+                        else if (float.Parse(comPort.MAV.param["SYSID_SW_TYPE"].ToString()) == 0)
+                        {
+                            _connectionControl.TOOL_APMFirmware.SelectedIndex = _connectionControl.TOOL_APMFirmware.Items.IndexOf(Firmwares.ArduPlane);
+                        }
+                    }
+
+                    // save the baudrate for this port
+                    config[_connectionControl.CMB_serialport.Text + "_BAUD"] = _connectionControl.CMB_baudrate.Text;
+
+                    // refresh config window if needed
+                    if (MyView.current != null)
+                    {
+                        if (MyView.current.Name == "HWConfig")
+                            MyView.ShowScreen("HWConfig");
+                        if (MyView.current.Name == "SWConfig")
+                            MyView.ShowScreen("SWConfig");
+                    }
+
+
+                    // load wps on connect option.
+                    if (config["loadwpsonconnect"] != null && bool.Parse(config["loadwpsonconnect"].ToString()) == true)
+                    {
+                        MenuFlightPlanner_Click(null, null);
+                        FlightPlanner.BUT_read_Click(null, null);
+                    }
+
+                    // set connected icon
+                    this.MenuConnect.Image = global::ArdupilotMega.Properties.Resources.disconnect;
+                }
+                catch (Exception ex)
+                {
+                    log.Warn(ex);
+                    try
+                    {
+                        comPort.Open();
+                        _connectionControl.IsConnected(false);
+                        UpdateConnectIcon();
+                        
+                    }
+                    catch { }
+                    CustomMessageBox.Show(@"Can not establish a connection\n\n" + ex.Message);
+                    return;
+                }
+            }
+           
+
+            /*
+            comPort.giveComport = false;
+
+
+
+            // sanity check
+            if (comPort.BaseStream.IsOpen && MainV2.comPort.MAV.cs.groundspeed > 4)
+            {
+                if (DialogResult.No == CustomMessageBox.Show("Your model is still moving are you sure you want to disconnect?", "Disconnect", MessageBoxButtons.YesNo))
+                {
+                    return;
+                }
+            }
+
+            // cleanup from any previous sessions
+            if (comPort.logfile != null)
+                comPort.logfile.Close();
+
+            if (comPort.rawlogfile != null)
+                comPort.rawlogfile.Close();
+
+            comPort.logfile = null;
+            comPort.rawlogfile = null;
+
+            // decide if this is a connect or disconnect
+            if (comPort.BaseStream.IsOpen)
+            {
+                try
+                {
+                    if (speechEngine != null) // cancel all pending speech
+                        speechEngine.SpeakAsyncCancelAll();
+
+                    comPort.BaseStream.DtrEnable = false;
+                    comPort.Close();
+                }
+                catch (Exception ex)
+                {
+                    log.Error(ex);
+                }
+
+                // now that we have closed the connection, cancel the connection stats
+                // so that the 'time connected' etc does not grow, but the user can still
+                // look at the now frozen stats on the still open form
+                try
+                {
+                    // if terminal is used, then closed using this button.... exception
+                    ((ConnectionStats)this.connectionStatsForm.Controls[0]).StopUpdates();
+                }
+                catch { }
+
+                this.MenuConnect.Image = global::ArdupilotMega.Properties.Resources.connect;
+                return;
             }
             else
             {
@@ -640,8 +888,9 @@ namespace ArdupilotMega
                     }
 
                     // set port, then options
-                    comPort.BaseStream.PortName = _connectionControl.CMB_serialport.Text;
+                            
 
+                    comPort.BaseStream.PortName = _connectionControl.CMB_serialport.Text;
                     comPort.BaseStream.DataBits = 8;
                     comPort.BaseStream.StopBits = (StopBits)Enum.Parse(typeof(StopBits), "1");
                     comPort.BaseStream.Parity = (Parity)Enum.Parse(typeof(Parity), "None");
@@ -657,6 +906,11 @@ namespace ArdupilotMega
 
                     // prevent serialreader from doing anything
                     comPort.giveComport = true;
+                    _connectionControl.IsConnected(true);
+                    UpdateConnectIcon();
+                    comPort.Open();
+                    this.MenuConnect.Image = global::ArdupilotMega.Properties.Resources.connect;
+                    return;
 
                         // reset on connect logic.
                         if (config["CHK_resetapmonconnect"] == null || bool.Parse(config["CHK_resetapmonconnect"].ToString()) == true)
@@ -678,7 +932,9 @@ namespace ArdupilotMega
                     connecttime = DateTime.Now;
 
                     // do the connect
-                    comPort.Open(true);
+                    
+                    
+                   
 
                     // detect firmware we are conected to.
                     if (comPort.MAV.param["SYSID_SW_TYPE"] != null)
@@ -729,15 +985,17 @@ namespace ArdupilotMega
                     log.Warn(ex);
                     try
                     {
-                        _connectionControl.IsConnected(false);
+                        _connectionControl.IsConnected(true);
                         UpdateConnectIcon();
-                        comPort.Close();
+                        comPort.Open();
+                        return;
                     }
                     catch { }
                     CustomMessageBox.Show(@"Can not establish a connection\n\n" + ex.Message);
                     return;
                 }
             }
+             */ 
         }
 
         private void CMB_serialport_SelectedIndexChanged(object sender, EventArgs e)
@@ -775,6 +1033,7 @@ namespace ArdupilotMega
                 }
             }
             catch { }
+
         }
 
         private void MainV2_FormClosed(object sender, FormClosedEventArgs e)
@@ -1214,7 +1473,7 @@ namespace ArdupilotMega
                             mavlink_version = 3,
                         };
 
-                        comPort.sendPacket(htb);
+                        //comPort.sendPacket(htb);
 
                         foreach (var port in MainV2.Comports)
                         {
@@ -1402,8 +1661,8 @@ namespace ArdupilotMega
             //MyView.AddScreen(new MainSwitcher.Screen("HWConfig", new GCSViews.HardwareConfig(), false));
             MyView.AddScreen(new MainSwitcher.Screen("HWConfig", new GCSViews.Hardware(), false));
             MyView.AddScreen(new MainSwitcher.Screen("SWConfig", new GCSViews.SoftwareConfig(), false));
-            MyView.AddScreen(new MainSwitcher.Screen("Simulation", Simulation, true));
-            MyView.AddScreen(new MainSwitcher.Screen("Terminal", new GCSViews.Terminal(), false));
+            //MyView.AddScreen(new MainSwitcher.Screen("Simulation", new GCSViews.BigTerminal(), false));
+            MyView.AddScreen(new MainSwitcher.Screen("BigTerminal", new GCSViews.BigTerminal(), false));
             MyView.AddScreen(new MainSwitcher.Screen("Help", new GCSViews.Help(), false));
 
             // init button depressed - ensures correct action

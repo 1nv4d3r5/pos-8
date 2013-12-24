@@ -24,7 +24,9 @@ namespace ArdupilotMega.Controls
         public event EventHandler ShowLinkStats;
         public ComboBox CMB_baudrate { get { return this.cmb_Baud; } }
         public ComboBox CMB_serialport { get { return this.cmb_Connection; } }
+        public ComboBox CMB_serialportTX { get { return this.cmb_ConnectionTX; } }
         public ComboBox TOOL_APMFirmware { get { return this.cmb_ConnectionType; } }
+
 
         /// <summary>
         /// Called from the main form - set whether we are connected or not currently.

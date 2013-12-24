@@ -31,6 +31,7 @@ namespace ArdupilotMega.GCSViews
     public partial class NanosatEEPIS : MyUserControl
     {
         int tickStart = 0,niam=0;
+        String RxString;
 
         public static int threadrun = 0;                    // buat loop while 1
 
@@ -79,6 +80,8 @@ namespace ArdupilotMega.GCSViews
         public static GMapOverlay polygons; // where the track is drawn
         GMapOverlay drawnpolygons;
 
+
+
         
         public NanosatEEPIS()
         {
@@ -91,21 +94,28 @@ namespace ArdupilotMega.GCSViews
 
         private void NanosatEEPIS_Load(object sender, EventArgs e)
         {
+            //gambar orbit
+
+            //gambar orbit
             //resize ukuran
+            ubahukuran();
             //resize ukuran
+
+
             System.Threading.Thread t11 = new System.Threading.Thread(new System.Threading.ThreadStart(mainloop))
             {
                 IsBackground = true,
                 Name = "FlightData updater"
             };
-            splitBig.Panel2Collapsed = false;
 
-            ubahukuran();
 
+
+            miniTerminal.Text = "MINI TERMINAL EEPISat";
 
             t11.Start();                        //while 1
-            //TGrafik.Enabled = true;
-            //TGrafik.Start();
+            threadrun = 1;
+            TGrafik.Enabled = true;
+            TGrafik.Start();
             
         }
 
@@ -136,7 +146,7 @@ namespace ArdupilotMega.GCSViews
             {
                 //------------------------------------------------> gak bisa ambil data kalau gak ada ini<----------------------//
                 if (threadrun == 0) { return; }
-
+                
                 if (MainV2.comPort.giveComport == true)
                 {
                     System.Threading.Thread.Sleep(50);
@@ -144,6 +154,7 @@ namespace ArdupilotMega.GCSViews
                 }
                 if (!MainV2.comPort.BaseStream.IsOpen)
                     lastdata = DateTime.Now;
+                
                 // re-request servo data
                 if (!(lastdata.AddSeconds(8) > DateTime.Now) && MainV2.comPort.BaseStream.IsOpen)
                 {
@@ -151,8 +162,9 @@ namespace ArdupilotMega.GCSViews
                     try
                     {
                         //System.Threading.Thread.Sleep(1000);
-
+                        
                         //comPort.requestDatastream((byte)ArdupilotMega.MAVLink09.MAV_DATA_STREAM.RAW_CONTROLLER, 0); // request servoout
+                        /* 
                         MainV2.comPort.requestDatastream(ArdupilotMega.MAVLink.MAV_DATA_STREAM.EXTENDED_STATUS, MainV2.comPort.MAV.cs.ratestatus); // mode
                         MainV2.comPort.requestDatastream(ArdupilotMega.MAVLink.MAV_DATA_STREAM.POSITION, MainV2.comPort.MAV.cs.rateposition); // request gps
                         MainV2.comPort.requestDatastream(ArdupilotMega.MAVLink.MAV_DATA_STREAM.EXTRA1, MainV2.comPort.MAV.cs.rateattitude); // request attitude
@@ -160,19 +172,22 @@ namespace ArdupilotMega.GCSViews
                         MainV2.comPort.requestDatastream(ArdupilotMega.MAVLink.MAV_DATA_STREAM.EXTRA3, MainV2.comPort.MAV.cs.ratesensors); // request extra stuff - tridge
                         MainV2.comPort.requestDatastream(ArdupilotMega.MAVLink.MAV_DATA_STREAM.RAW_SENSORS, MainV2.comPort.MAV.cs.ratesensors); // request raw sensor
                         MainV2.comPort.requestDatastream(ArdupilotMega.MAVLink.MAV_DATA_STREAM.RC_CHANNELS, MainV2.comPort.MAV.cs.raterc); // request rc info
+                        */
                     }
                     catch { MessageBox.Show("Failed to request rates"); }
                     lastdata = DateTime.Now.AddSeconds(120); // prevent flooding
                 }
-
+                
                 if (!MainV2.comPort.logreadmode)
                     System.Threading.Thread.Sleep(100); // max is only ever 10 hz
+                 
                 //------------------------------------------------> gak bisa ambil data kalau gak ada ini<----------------------//
                 //------------------------------------------------->database<-------------------------------------------------------
+                //request
                 updateBindingSource();
                 //------------------------------------------------->database<-------------------------------------------------------
                 // ------------------------------------->data ke grafik<------------------------------------------------------------
-                if (tunning.AddMilliseconds(50) < DateTime.Now && checkBoxGrafik.Checked == true)
+                if (tunning.AddMilliseconds(50) < DateTime.Now && checkDataSatelit.Checked == true)
                 {
 
                     double time = (Environment.TickCount - tickStart) / 1000.0;
@@ -201,57 +216,52 @@ namespace ArdupilotMega.GCSViews
 
             }
         }
+
         
         private void updateBindingSource()      //--------------------------------> update data baru <------------------------------------------//    
         {
-            /*
-            if (this.Visible)
+            try
             {
-                //Console.Write("bindingSource1 ");
-                MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSource);
-                //Console.Write("bindingSourceHud ");
-                //MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSourceHud);
-                //Console.WriteLine("DONE ");
-            }
-            else
-            {
-                //Console.WriteLine("Null Binding");
-                MainV2.comPort.MAV.cs.UpdateCurrentSettings(null);
-            }
-            */
-            this.BeginInvoke((System.Windows.Forms.MethodInvoker)delegate()
-            {
-                try
+                this.BeginInvoke((System.Windows.Forms.MethodInvoker)delegate()
                 {
-                    if (this.Visible)
+                    try
                     {
-                        //Console.Write("bindingSource1 ");
-                        MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSource);
-                        //Console.Write("bindingSourceHud ");
-                        //MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSourceHud);
-                        //Console.WriteLine("DONE ");
+                        if (this.Visible)
+                        {
+                            //Console.Write("bindingSource1 ");
+                            MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSource);
+                            //Console.Write("bindingSourceHud ");
+                            //MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSourceHud);
+                            //Console.WriteLine("DONE ");
+                        }
+                        else
+                        {
+                            //Console.WriteLine("Null Binding");
+                            MainV2.comPort.MAV.cs.UpdateCurrentSettings(null);
+                        }
                     }
-                    else
-                    {
-                        //Console.WriteLine("Null Binding");
-                        MainV2.comPort.MAV.cs.UpdateCurrentSettings(null);
-                    }
-                }
-                catch { }
-            });
-             
+                    catch { }
+                });
+            }
+            catch { }
         }
         private void checkDataSatelit_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkDataSatelit.Checked == true)
-            {
-                splitBig.Panel2Collapsed = false;
-            }
-            else 
-            {
-                splitBig.Panel2Collapsed = true;
-            }
+            splitContainer1.Panel2Collapsed = !checkDataSatelit.Checked;
             ubahukuran();
+
+            if (checkDataSatelit.Checked)
+            {
+                TGrafik.Enabled = true;
+                TGrafik.Start();
+                grafik.Refresh();
+
+            }
+            else
+            {
+                TGrafik.Stop();
+                TGrafik.Enabled = false;
+            }
         }
 
 
@@ -259,24 +269,32 @@ namespace ArdupilotMega.GCSViews
         private void ubahukuran()
         {
             int x, y,l;
+
+            //punya gmap
+            splitContainer3.Width = splitContainer1.Width-20;
+            splitContainer3.Height = splitContainer1.Panel1.Height;
+            splitContainer3.SplitterDistance = 100;
+
+            gMap.Width = splitContainer1.Width;
+            gMap.Height = splitContainer1.Panel1.Height;
             
-            gMap.Height = splitBig.Panel1.Height - 3;
-            gMap.Width = splitBig.Width - 3;
+            //punya tab
+            tabControlUmum.Width = splitContainer1.Width-20;
+            tabControlUmum.Height = splitContainer1.Panel2.Height-20;
 
-            grafik.Height = splitBig.Panel2.Height - 15;
-            grafik.Width = splitBig.Width - 15;
+            splitContainer2.Height = splitContainer1.Panel2.Height;
+            splitContainer2.Width = tabControlUmum.Width;
 
-            tabControl1.Width = splitSmall.Width - 3;
-            tabControl1.Height = splitSmall.Panel1.Height - 3;
+            //grafik
+            grafik.Width = splitContainer2.Panel1.Width;
+            grafik.Height = splitContainer2.Height-60;
 
-            //monitor.Width = splitSmall.Width - 3;
-            //monitor.Height = splitSmall.Panel2.Height - 3;
+            //
+            miniTerminal.Height = splitContainer3.Panel1.Height;
+            miniTerminal.Location = new Point(splitContainer3.Width - miniTerminal.Width,0);
 
-            tabControlUmum.Width = splitBig.Width - 3;
-            tabControlUmum.Height = splitBig.Panel2.Height - 3;
-
-            x = tabControlUmum.Width;
-            y = tabControlUmum.Height;
+            x = splitContainer3.Width;
+            y = splitContainer3.Panel1.Height;
             l = (int)0.25 * x;
 
             Gauge1.Width = l;
@@ -290,17 +308,16 @@ namespace ArdupilotMega.GCSViews
             Gauge3.Width = l;
             Gauge3.Height = y;
             Gauge3.Location = new Point(Gauge2.Right, 3);
+
             
-
-
             //quick view
-            tableLayoutPanel1.Width = tabControlUmum.Width-20;
-            tableLayoutPanel2.Width = tabControlUmum.Width-20;
-            tableLayoutPanel3.Width = tabControlUmum.Width-20;
+            tableLayoutPanel1.Width = splitContainer2.Panel2.Width - 20;
+            tableLayoutPanel2.Width = splitContainer2.Panel2.Width - 20;
+            tableLayoutPanel3.Width = splitContainer2.Panel2.Width - 20;
 
-            tableLayoutPanel1.Height = tabControlUmum.Height/3;
-            tableLayoutPanel2.Height = tabControlUmum.Height/3;
-            tableLayoutPanel3.Height = tabControlUmum.Height/3;
+            tableLayoutPanel1.Height = splitContainer2.Panel2.Height / 3;
+            tableLayoutPanel2.Height = splitContainer2.Panel2.Height / 3;
+            tableLayoutPanel3.Height = splitContainer2.Panel2.Height / 3;
 
             quickView11.Width = tableLayoutPanel1.ClientSize.Width;
             quickView12.Width = tableLayoutPanel1.ClientSize.Width; 
@@ -315,15 +332,11 @@ namespace ArdupilotMega.GCSViews
             quickView34.Width = tableLayoutPanel3.ClientSize.Width;
 
 
-            
-
-
-
-
         }
-
-        private orbit()
-        {
+        
+        //private orbit()
+        //{
+            /*
             if (polygongridmode == false)
             {
                 CustomMessageBox.Show("You will remain in polygon mode until you clear the polygon or create a grid/upload a fence");
@@ -349,9 +362,12 @@ namespace ArdupilotMega.GCSViews
             gMap.UpdatePolygonLocalPosition(drawnpolygon);
 
             gMap.Invalidate();
-        }
-        
+            */
 
+            
+        //}
+        
+        
 
 
         bool setupPropertyInfo(ref System.Reflection.PropertyInfo input, string name, object source)
@@ -429,21 +445,6 @@ namespace ArdupilotMega.GCSViews
             return;
         }
 
-        private void checkBoxGrafik_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxGrafik.Checked)
-            {
-                TGrafik.Enabled = true;
-                TGrafik.Start();
-                grafik.Refresh();
-
-            }
-            else
-            {
-                TGrafik.Stop();
-                TGrafik.Enabled = false;
-            }
-        }
         //mbuat opsi yang ditampilkan di grafik
         void chk_box_CheckedChanged(object sender, EventArgs e)         
         {
@@ -925,6 +926,15 @@ namespace ArdupilotMega.GCSViews
                 if (routes.Markers.Contains(marker))
                     routes.Markers.Remove(marker);
             }
+            PointLatLng point = new PointLatLng(-7.287500, 112.802500);
+
+            marker = new GMapMarkerRect(point);
+            marker.ToolTip = new GMapToolTip(marker);
+            marker.ToolTipMode = MarkerTooltipMode.Always;
+            marker.ToolTipText = "Stasiun Bumi EEPISat";
+
+            routes.Markers.Add(marker);
+
         }
 
         private void gMap_MouseMove(object sender, MouseEventArgs e)
@@ -953,17 +963,105 @@ namespace ArdupilotMega.GCSViews
 
                 if (MainV2.getConfig("CHK_disttohomeflightdata") != false.ToString())
                 {
-                    PointLatLng point = gMap.FromLocalToLatLng(e.X, e.Y);
+                    PointLatLng point = new PointLatLng(-7.287500, 112.802500);
 
                     marker = new GMapMarkerRect(point);
                     marker.ToolTip = new GMapToolTip(marker);
                     marker.ToolTipMode = MarkerTooltipMode.Always;
-                    marker.ToolTipText = "Dist to Home: " + ((gMap.Manager.GetDistance(point, MainV2.comPort.MAV.cs.HomeLocation.Point()) * 1000) * MainV2.comPort.MAV.cs.multiplierdist).ToString("0");
+                    marker.ToolTipText = "Stasiun Bumi EEPISat";
 
                     routes.Markers.Add(marker);
                 }
             }
+            
         }
+
+        private void DisplayText(object sender, EventArgs e)
+        {
+            miniTerminal.AppendText(RxString);
+        }
+
+        private void serialPortTX_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+             
+            RxString = serialPortTX.ReadExisting();
+            this.Invoke(new EventHandler(DisplayText));
+        }
+
+        private void button_serialTX_Click(object sender, EventArgs e)
+        {
+            serialPortTX.PortName = ArdupilotMega.MainV2._connectionControl.CMB_serialportTX.Text;
+            serialPortTX.BaudRate = int.Parse(ArdupilotMega.MainV2._connectionControl.CMB_baudrate.Text);
+
+            serialPortTX.Open();
+            if (serialPortTX.IsOpen)
+            {
+                //button_serialTX.Enabled = false;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int hit;
+            byte[] packet = new byte[58];
+            char[] data = new char[50];
+            
+            packet[0] = 254;
+            packet[1] = (byte)miniTerminal.Text.Length;
+            packet[2] = (byte)0;//packetcount
+
+            //packetcount++;
+
+            packet[3] = 255; // this is always 255 - MYGCS
+            packet[4] = 0;
+            packet[5] = 253;
+
+            /*
+            foreach (byte b in data)
+            {
+                packet[i] = b;
+                i++;
+            }
+             * */
+            
+            /*
+            ushort checksum = MavlinkCRC.crc_calculate(packet, packet[1] + 6);
+            
+            checksum = MavlinkCRC.crc_accumulate(83, checksum);
+
+            byte ck_a = (byte)(checksum & 0xFF); ///< High byte
+            byte ck_b = (byte)(checksum >> 8); ///< Low byte
+
+            packet[i] = ck_a;
+            i += 1;
+            packet[i] = ck_b;
+            i += 1;
+            */
+            serialPortTX.Write(packet,0,6);
+            //serialPortTX.WriteLine(textBox1.Text);
+            //MainV2.comPort.sendPacket(ArdupilotMega.MAVLink.MAVLINK_MSG_ID_STATUSTEXT
+            /*
+            for (hit = (7 + richTextBox1.TextLength); hit < 56; hit++)
+            {
+                packet[hit] = (byte)0;
+            }
+            packet[56] = 0;
+            packet[57] = 0;
+            serialPortTX.Write(packet, (7 + richTextBox1.TextLength), (51 - richTextBox1.TextLength));
+            */
+        }
+
+        private void checkBoxMiniTerminal_CheckedChanged(object sender, EventArgs e)
+        {
+            splitContainer3.Panel1Collapsed = !checkBoxMiniTerminal.Checked;
+            ubahukuran();
+        }
+
+
+
+        
+
+
         //----------------------------------------> google map <----------------------------------------------------
     }
 }

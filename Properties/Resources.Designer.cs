@@ -243,6 +243,16 @@ namespace ArdupilotMega.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap compass1 {
+            get {
+                object obj = ResourceManager.GetObject("compass1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap connect {
             get {
                 object obj = ResourceManager.GetObject("connect", resourceCulture);
@@ -343,6 +353,26 @@ namespace ArdupilotMega.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap guagearus {
+            get {
+                object obj = ResourceManager.GetObject("guagearus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap guagearus90 {
+            get {
+                object obj = ResourceManager.GetObject("guagearus90", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap hardwareconfig {
             get {
                 object obj = ResourceManager.GetObject("hardwareconfig", resourceCulture);
@@ -416,6 +446,26 @@ namespace ArdupilotMega.Properties {
         public static System.Drawing.Bitmap hilquad {
             get {
                 object obj = ResourceManager.GetObject("hilquad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap icon_battery_charging {
+            get {
+                object obj = ResourceManager.GetObject("icon-battery-charging", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap icon_battery_charging1 {
+            get {
+                object obj = ResourceManager.GetObject("icon-battery-charging1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -538,6 +588,26 @@ namespace ArdupilotMega.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap power {
+            get {
+                object obj = ResourceManager.GetObject("power", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap processor {
+            get {
+                object obj = ResourceManager.GetObject("processor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap px4 {
             get {
                 object obj = ResourceManager.GetObject("px4", resourceCulture);
@@ -571,6 +641,16 @@ namespace ArdupilotMega.Properties {
         public static System.Drawing.Bitmap quadx {
             get {
                 object obj = ResourceManager.GetObject("quadx", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap radio {
+            get {
+                object obj = ResourceManager.GetObject("radio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -628,9 +708,29 @@ namespace ArdupilotMega.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap sistemhardware_copy {
+            get {
+                object obj = ResourceManager.GetObject("sistemhardware copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap softwareconfig {
             get {
                 object obj = ResourceManager.GetObject("softwareconfig", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap solar_panel {
+            get {
+                object obj = ResourceManager.GetObject("solar_panel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

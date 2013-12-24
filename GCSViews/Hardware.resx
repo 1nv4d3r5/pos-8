@@ -118,27 +118,315 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 26</value>
+  <data name="imageLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>669, 422</value>
+  <data name="imageLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 170</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="imageLabel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
+  <data name="&gt;&gt;imageLabel1.Name" xml:space="preserve">
+    <value>imageLabel1</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;imageLabel1.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.ImageLabel, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;imageLabel1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;imageLabel1.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="imageLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 3</value>
+  </data>
+  <data name="imageLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 170</value>
+  </data>
+  <data name="imageLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;imageLabel2.Name" xml:space="preserve">
+    <value>imageLabel2</value>
+  </data>
+  <data name="&gt;&gt;imageLabel2.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.ImageLabel, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;imageLabel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;imageLabel2.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="imageLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>550, 3</value>
+  </data>
+  <data name="imageLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 170</value>
+  </data>
+  <data name="imageLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;imageLabel3.Name" xml:space="preserve">
+    <value>imageLabel3</value>
+  </data>
+  <data name="&gt;&gt;imageLabel3.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.ImageLabel, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;imageLabel3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;imageLabel3.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="imageLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 179</value>
+  </data>
+  <data name="imageLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 170</value>
+  </data>
+  <data name="imageLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;imageLabel4.Name" xml:space="preserve">
+    <value>imageLabel4</value>
+  </data>
+  <data name="&gt;&gt;imageLabel4.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.ImageLabel, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;imageLabel4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;imageLabel4.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="imageLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 179</value>
+  </data>
+  <data name="imageLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 170</value>
+  </data>
+  <data name="imageLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;imageLabel5.Name" xml:space="preserve">
+    <value>imageLabel5</value>
+  </data>
+  <data name="&gt;&gt;imageLabel5.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.ImageLabel, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;imageLabel5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;imageLabel5.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="imageLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>550, 179</value>
+  </data>
+  <data name="imageLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 170</value>
+  </data>
+  <data name="imageLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;imageLabel6.Name" xml:space="preserve">
+    <value>imageLabel6</value>
+  </data>
+  <data name="&gt;&gt;imageLabel6.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.ImageLabel, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;imageLabel6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;imageLabel6.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="imageLabel7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAYAAAA10dzkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAABUISURBVHhe7dABDQAAAMKg909tDjeIQGHAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+        gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+        MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+        BgwYMGDAgIGPgQHC7gABknQXUgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="imageLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 355</value>
+  </data>
+  <data name="imageLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 170</value>
+  </data>
+  <data name="imageLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;imageLabel7.Name" xml:space="preserve">
+    <value>imageLabel7</value>
+  </data>
+  <data name="&gt;&gt;imageLabel7.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.ImageLabel, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;imageLabel7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;imageLabel7.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="imageLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 355</value>
+  </data>
+  <data name="imageLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 170</value>
+  </data>
+  <data name="imageLabel8.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
+  </data>
+  <data name="&gt;&gt;imageLabel8.Name" xml:space="preserve">
+    <value>imageLabel8</value>
+  </data>
+  <data name="&gt;&gt;imageLabel8.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.ImageLabel, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;imageLabel8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;imageLabel8.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="imageLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>550, 355</value>
+  </data>
+  <data name="imageLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 170</value>
+  </data>
+  <data name="imageLabel9.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;imageLabel9.Name" xml:space="preserve">
+    <value>imageLabel9</value>
+  </data>
+  <data name="&gt;&gt;imageLabel9.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.ImageLabel, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;imageLabel9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;imageLabel9.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <metadata name="currentStateBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="quickView11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 119</value>
+  </data>
+  <data name="quickView11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 54</value>
+  </data>
+  <data name="quickView11.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;quickView11.Name" xml:space="preserve">
+    <value>quickView11</value>
+  </data>
+  <data name="&gt;&gt;quickView11.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView11.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;quickView11.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Gauge1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
@@ -148,28 +436,175 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="Gauge1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>90, 147</value>
+    <value>88, 3</value>
   </data>
   <data name="Gauge1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="Gauge1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 72</value>
+    <value>170, 170</value>
   </data>
   <data name="Gauge1.TabIndex" type="System.Int32, mscorlib">
-    <value>81</value>
+    <value>88</value>
   </data>
   <data name="&gt;&gt;Gauge1.Name" xml:space="preserve">
     <value>Gauge1</value>
   </data>
   <data name="&gt;&gt;Gauge1.Type" xml:space="preserve">
-    <value>AGaugeApp.AGauge, ArdupilotMegaPlanner10, Version=1.1.4974.4886, Culture=neutral, PublicKeyToken=null</value>
+    <value>AGaugeApp.AGauge, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Gauge1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Gauge1.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="quickView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 119</value>
+  </data>
+  <data name="quickView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 54</value>
+  </data>
+  <data name="quickView1.TabIndex" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="&gt;&gt;quickView1.Name" xml:space="preserve">
+    <value>quickView1</value>
+  </data>
+  <data name="&gt;&gt;quickView1.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;quickView1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="quickView2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>550, 119</value>
+  </data>
+  <data name="quickView2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 54</value>
+  </data>
+  <data name="quickView2.TabIndex" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="&gt;&gt;quickView2.Name" xml:space="preserve">
+    <value>quickView2</value>
+  </data>
+  <data name="&gt;&gt;quickView2.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;quickView2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="quickView3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 295</value>
+  </data>
+  <data name="quickView3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 54</value>
+  </data>
+  <data name="quickView3.TabIndex" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="&gt;&gt;quickView3.Name" xml:space="preserve">
+    <value>quickView3</value>
+  </data>
+  <data name="&gt;&gt;quickView3.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;quickView3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="quickView4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 295</value>
+  </data>
+  <data name="quickView4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 54</value>
+  </data>
+  <data name="quickView4.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="&gt;&gt;quickView4.Name" xml:space="preserve">
+    <value>quickView4</value>
+  </data>
+  <data name="&gt;&gt;quickView4.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;quickView4.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="quickView5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>550, 295</value>
+  </data>
+  <data name="quickView5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 54</value>
+  </data>
+  <data name="quickView5.TabIndex" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="&gt;&gt;quickView5.Name" xml:space="preserve">
+    <value>quickView5</value>
+  </data>
+  <data name="&gt;&gt;quickView5.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;quickView5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="quickView6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 471</value>
+  </data>
+  <data name="quickView6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 54</value>
+  </data>
+  <data name="quickView6.TabIndex" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="&gt;&gt;quickView6.Name" xml:space="preserve">
+    <value>quickView6</value>
+  </data>
+  <data name="&gt;&gt;quickView6.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;quickView6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="quickView7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>550, 471</value>
+  </data>
+  <data name="quickView7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 54</value>
+  </data>
+  <data name="quickView7.TabIndex" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="&gt;&gt;quickView7.Name" xml:space="preserve">
+    <value>quickView7</value>
+  </data>
+  <data name="&gt;&gt;quickView7.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;quickView7.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="aGauge1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -178,28 +613,28 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="aGauge1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>262, 147</value>
+    <value>362, 3</value>
   </data>
   <data name="aGauge1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="aGauge1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 72</value>
+    <value>170, 170</value>
   </data>
   <data name="aGauge1.TabIndex" type="System.Int32, mscorlib">
-    <value>82</value>
+    <value>96</value>
   </data>
   <data name="&gt;&gt;aGauge1.Name" xml:space="preserve">
     <value>aGauge1</value>
   </data>
   <data name="&gt;&gt;aGauge1.Type" xml:space="preserve">
-    <value>AGaugeApp.AGauge, ArdupilotMegaPlanner10, Version=1.1.4974.4886, Culture=neutral, PublicKeyToken=null</value>
+    <value>AGaugeApp.AGauge, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;aGauge1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;aGauge1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>21</value>
   </data>
   <data name="aGauge2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -208,28 +643,28 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="aGauge2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>415, 147</value>
+    <value>635, 3</value>
   </data>
   <data name="aGauge2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="aGauge2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 72</value>
+    <value>170, 170</value>
   </data>
   <data name="aGauge2.TabIndex" type="System.Int32, mscorlib">
-    <value>83</value>
+    <value>97</value>
   </data>
   <data name="&gt;&gt;aGauge2.Name" xml:space="preserve">
     <value>aGauge2</value>
   </data>
   <data name="&gt;&gt;aGauge2.Type" xml:space="preserve">
-    <value>AGaugeApp.AGauge, ArdupilotMegaPlanner10, Version=1.1.4974.4886, Culture=neutral, PublicKeyToken=null</value>
+    <value>AGaugeApp.AGauge, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;aGauge2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;aGauge2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>22</value>
   </data>
   <data name="aGauge3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -238,61 +673,58 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="aGauge3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>63, 329</value>
+    <value>88, 179</value>
   </data>
   <data name="aGauge3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="aGauge3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 99</value>
+    <value>170, 170</value>
   </data>
   <data name="aGauge3.TabIndex" type="System.Int32, mscorlib">
-    <value>84</value>
+    <value>98</value>
   </data>
   <data name="&gt;&gt;aGauge3.Name" xml:space="preserve">
     <value>aGauge3</value>
   </data>
   <data name="&gt;&gt;aGauge3.Type" xml:space="preserve">
-    <value>AGaugeApp.AGauge, ArdupilotMegaPlanner10, Version=1.1.4974.4886, Culture=neutral, PublicKeyToken=null</value>
+    <value>AGaugeApp.AGauge, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;aGauge3.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;aGauge3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>23</value>
   </data>
   <data name="aGauge4.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <metadata name="currentStateBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>168, 17</value>
-  </metadata>
   <data name="aGauge4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="aGauge4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>221, 219</value>
+    <value>362, 179</value>
   </data>
   <data name="aGauge4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="aGauge4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 93</value>
+    <value>170, 170</value>
   </data>
   <data name="aGauge4.TabIndex" type="System.Int32, mscorlib">
-    <value>85</value>
+    <value>99</value>
   </data>
   <data name="&gt;&gt;aGauge4.Name" xml:space="preserve">
     <value>aGauge4</value>
   </data>
   <data name="&gt;&gt;aGauge4.Type" xml:space="preserve">
-    <value>AGaugeApp.AGauge, ArdupilotMegaPlanner10, Version=1.1.4974.4886, Culture=neutral, PublicKeyToken=null</value>
+    <value>AGaugeApp.AGauge, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;aGauge4.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;aGauge4.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>24</value>
   </data>
   <data name="aGauge5.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -301,76 +733,166 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="aGauge5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>415, 349</value>
+    <value>635, 179</value>
   </data>
   <data name="aGauge5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="aGauge5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 79</value>
+    <value>170, 170</value>
   </data>
   <data name="aGauge5.TabIndex" type="System.Int32, mscorlib">
-    <value>86</value>
+    <value>100</value>
   </data>
   <data name="&gt;&gt;aGauge5.Name" xml:space="preserve">
     <value>aGauge5</value>
   </data>
   <data name="&gt;&gt;aGauge5.Type" xml:space="preserve">
-    <value>AGaugeApp.AGauge, ArdupilotMegaPlanner10, Version=1.1.4974.4886, Culture=neutral, PublicKeyToken=null</value>
+    <value>AGaugeApp.AGauge, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;aGauge5.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;aGauge5.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>25</value>
   </data>
-  <metadata name="bindingSourceHW.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="LAltitude.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="aGauge6.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
-  <data name="LAltitude.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  <data name="aGauge6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
-  <data name="LAltitude.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="aGauge6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 355</value>
   </data>
-  <data name="LAltitude.Location" type="System.Drawing.Point, System.Drawing">
-    <value>562, 248</value>
+  <data name="aGauge6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
-  <data name="LAltitude.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 20</value>
+  <data name="aGauge6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 170</value>
   </data>
-  <data name="LAltitude.TabIndex" type="System.Int32, mscorlib">
-    <value>87</value>
+  <data name="aGauge6.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
   </data>
-  <data name="LAltitude.Text" xml:space="preserve">
-    <value>LAltitude</value>
+  <data name="&gt;&gt;aGauge6.Name" xml:space="preserve">
+    <value>aGauge6</value>
   </data>
-  <data name="&gt;&gt;LAltitude.Name" xml:space="preserve">
-    <value>LAltitude</value>
+  <data name="&gt;&gt;aGauge6.Type" xml:space="preserve">
+    <value>AGaugeApp.AGauge, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;LAltitude.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LAltitude.Parent" xml:space="preserve">
+  <data name="&gt;&gt;aGauge6.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;LAltitude.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;aGauge6.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="aGauge7.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="aGauge7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="aGauge7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>635, 355</value>
+  </data>
+  <data name="aGauge7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aGauge7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 170</value>
+  </data>
+  <data name="aGauge7.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="&gt;&gt;aGauge7.Name" xml:space="preserve">
+    <value>aGauge7</value>
+  </data>
+  <data name="&gt;&gt;aGauge7.Type" xml:space="preserve">
+    <value>AGaugeApp.AGauge, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aGauge7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;aGauge7.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="quickView8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 471</value>
+  </data>
+  <data name="quickView8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 54</value>
+  </data>
+  <data name="quickView8.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="&gt;&gt;quickView8.Name" xml:space="preserve">
+    <value>quickView8</value>
+  </data>
+  <data name="&gt;&gt;quickView8.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;quickView8.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="imageLabel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 355</value>
+  </data>
+  <data name="imageLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 170</value>
+  </data>
+  <data name="imageLabel10.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="&gt;&gt;imageLabel10.Name" xml:space="preserve">
+    <value>imageLabel10</value>
+  </data>
+  <data name="&gt;&gt;imageLabel10.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.ImageLabel, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;imageLabel10.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;imageLabel10.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="aGauge8.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="aGauge8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="aGauge8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 355</value>
+  </data>
+  <data name="aGauge8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aGauge8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 170</value>
+  </data>
+  <data name="aGauge8.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="&gt;&gt;aGauge8.Name" xml:space="preserve">
+    <value>aGauge8</value>
+  </data>
+  <data name="&gt;&gt;aGauge8.Type" xml:space="preserve">
+    <value>AGaugeApp.AGauge, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aGauge8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;aGauge8.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 461</value>
+    <value>813, 535</value>
   </data>
   <data name="&gt;&gt;currentStateBindingSource.Name" xml:space="preserve">
     <value>currentStateBindingSource</value>
@@ -378,16 +900,10 @@
   <data name="&gt;&gt;currentStateBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;bindingSourceHW.Name" xml:space="preserve">
-    <value>bindingSourceHW</value>
-  </data>
-  <data name="&gt;&gt;bindingSourceHW.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Hardware</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MyUserControl, ArdupilotMegaPlanner10, Version=1.1.4974.4886, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.MyUserControl, EEPISat-GCS, Version=1.1.5105.7074, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

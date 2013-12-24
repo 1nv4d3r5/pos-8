@@ -9,13 +9,13 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ArdupilotMega</RootNamespace>
-    <AssemblyName>ArdupilotMegaPlanner10</AssemblyName>
+    <AssemblyName>EEPISat-GCS</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish/</PublishUrl>
+    <PublishUrl>C:\Users\Ni%27am Tamami\Desktop\publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -28,9 +28,8 @@
     <TargetCulture>en-US</TargetCulture>
     <ProductName>ArdupilotMegaPlanner</ProductName>
     <PublisherName>Michael Oborne</PublisherName>
-    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.htm</WebPage>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>0.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -87,7 +86,7 @@
     <ManifestKeyFile>ArdupilotMega_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>false</GenerateManifests>
+    <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
@@ -109,7 +108,7 @@
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>apm2.ico</ApplicationIcon>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup />
@@ -503,6 +502,12 @@
     <Compile Include="GCSViews\ConfigurationView\ConfigHWOSD.Designer.cs">
       <DependentUpon>ConfigHWOSD.cs</DependentUpon>
     </Compile>
+    <Compile Include="GCSViews\BigTerminal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\BigTerminal.Designer.cs">
+      <DependentUpon>BigTerminal.cs</DependentUpon>
+    </Compile>
     <Compile Include="GCSViews\Hardware.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -712,6 +717,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWOSD.zh-TW.resx">
       <DependentUpon>ConfigHWOSD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\BigTerminal.de-DE.resx">
+      <DependentUpon>BigTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\BigTerminal.es-ES.resx">
+      <DependentUpon>BigTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\BigTerminal.fr.resx">
+      <DependentUpon>BigTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\BigTerminal.it-IT.resx">
+      <DependentUpon>BigTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\BigTerminal.pl.resx">
+      <DependentUpon>BigTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\BigTerminal.resx">
+      <DependentUpon>BigTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\BigTerminal.ru-RU.resx">
+      <DependentUpon>BigTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\BigTerminal.zh-Hans.resx">
+      <DependentUpon>BigTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\BigTerminal.zh-TW.resx">
+      <DependentUpon>BigTerminal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\Hardware.de-DE.resx">
       <DependentUpon>Hardware.cs</DependentUpon>
@@ -2034,6 +2066,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="icon.ico" />
     <Content Include="JSBSim.exe" />
     <Content Include="mavcmd.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -2055,6 +2088,14 @@
     <None Include="Resources\logogcs.png" />
     <None Include="Resources\sistemhardware copy.png" />
     <None Include="Resources\Blue-Metro-Theme.png" />
+    <None Include="Resources\guagearus.jpg" />
+    <None Include="Resources\hardware\compass.png" />
+    <None Include="Resources\hardware\icon-battery-charging.png" />
+    <None Include="Resources\hardware\processor.png" />
+    <None Include="Resources\hardware\radio.png" />
+    <None Include="Resources\hardware\solar_panel.png" />
+    <None Include="Resources\guagearus90.jpg" />
+    <None Include="Resources\hardware\power.png" />
     <Content Include="version.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

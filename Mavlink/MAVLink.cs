@@ -136,7 +136,7 @@ namespace ArdupilotMega
         /// <summary>
         /// used for outbound packet sending
         /// </summary>
-        internal int packetcount = 0;
+        public int packetcount = 0;
       
         /// <summary>
         /// used to calc packets per second on any single message type - used for stream rate comparaison
@@ -278,6 +278,7 @@ namespace ArdupilotMega
 
         public void Open(bool getparams)
         {
+
             if (BaseStream.IsOpen)
                 return;
 
@@ -308,7 +309,7 @@ namespace ArdupilotMega
 
         void FrmProgressReporterDoWorkAndParams(object sender, ProgressWorkerEventArgs e, object passdata = null)
         {
-            OpenBg(true, e);
+            OpenBg(false, e);
         }
 
         void FrmProgressReporterDoWorkNOParams(object sender, ProgressWorkerEventArgs e, object passdata = null)
@@ -318,7 +319,11 @@ namespace ArdupilotMega
 
         private void OpenBg(bool getparams, ProgressWorkerEventArgs progressWorkerEventArgs)
         {
-            frmProgressReporter.UpdateProgressAndStatus(-1, "Menghubungkan dengan satelit...");
+
+
+            frmProgressReporter.UpdateProgressAndStatus(-1, "Menghubungkan...");
+
+
 
             giveComport = true;
 
@@ -360,7 +365,7 @@ namespace ArdupilotMega
                     int secondsRemaining = (deadline - e.SignalTime).Seconds;
                     //if (Progress != null)
                     //    Progress(-1, string.Format("Trying to connect.\nTimeout in {0}", secondsRemaining));
-                    frmProgressReporter.UpdateProgressAndStatus(-1, string.Format("Trying to connect.\nTimeout in {0}", secondsRemaining));
+                    frmProgressReporter.UpdateProgressAndStatus(-1, string.Format("Menghubungkan .\nTimeout {0}", secondsRemaining));
                     if (secondsRemaining > 0) countDown.Start();
                 };
                 countDown.Start();
@@ -378,7 +383,7 @@ namespace ArdupilotMega
                         giveComport = false;
                         return;
                     }
-
+                    
                     // incase we are in setup mode
                     //BaseStream.WriteLine("planner\rgcs\r");
 
@@ -390,7 +395,7 @@ namespace ArdupilotMega
                         //    Progress(-1, "No Heatbeat Packets");
                         countDown.Stop();
                         this.Close();
-                
+
                         CustomMessageBox.Show(@"Can not establish a connection\n
 Please check the following
 1. You have firmware loaded
@@ -451,16 +456,21 @@ Please check the following
                         break;
                     }
 
+
+
                 }
+
 
                 countDown.Stop();
 
-                frmProgressReporter.UpdateProgressAndStatus(0, "Getting Params.. (sysid " + sysid + " compid " + compid + ") ");
+                frmProgressReporter.UpdateProgressAndStatus(0, "Ambil Params.. (sysid " + sysid + " compid " + compid + ") ");
 
+                /* buat ngambil parameter
                 if (getparams)
                 {
                     getParamListBG();
                 }
+                */
 
                 if (frmProgressReporter.doWorkArgs.CancelAcknowledged == true)
                 {
@@ -474,17 +484,19 @@ Please check the following
             {
                 try
                 {
-                    BaseStream.Close();
+                    BaseStream.Open();
                 }
                 catch { }
                 giveComport = false;
                 if (string.IsNullOrEmpty(progressWorkerEventArgs.ErrorMessage))
-                    progressWorkerEventArgs.ErrorMessage = "Connect Failed";
-                throw e;
+                    //progressWorkerEventArgs.ErrorMessage = "Tidak ada identifikasi error";
+                    progressWorkerEventArgs.ErrorMessage = "Koneksi Gagal";
+                log.Error(e);
+                throw;
             }
             //frmProgressReporter.Close();
             giveComport = false;
-            frmProgressReporter.UpdateProgressAndStatus(100, "Done.");
+            frmProgressReporter.UpdateProgressAndStatus(100, "Koneksi Berhasil.");
             log.Info("Done open " + sysid + " " + compid);
             packetslost = 0;
             synclost = 0;
@@ -534,7 +546,7 @@ Please check the following
         /// </summary>
         /// <param name="messageType">type number</param>
         /// <param name="indata">struct of data</param>
-        void generatePacket(byte messageType, object indata)
+        public void generatePacket(byte messageType, object indata)
         {
             lock (objlock)
             {
@@ -612,6 +624,108 @@ Please check the following
 
                 }
                 catch { }
+                /*
+                if (messageType == ArdupilotMega.MAVLink.MAVLINK_MSG_ID_REQUEST_DATA_STREAM)
+                {
+                    try
+                    {
+                        BinaryWriter bw = new BinaryWriter(File.OpenWrite("serialsent.raw"));
+                        bw.Seek(0, SeekOrigin.End);
+                        bw.Write(packet, 0, i);
+                        bw.Write((byte)'\n');
+                        bw.Close();
+                    }
+                    catch { } // been getting errors from this. people must have it open twice.
+                }*/
+            }
+        }
+
+        /// <summary>
+        /// Generate a Mavlink Packet and write to serial
+        /// </summary>
+        /// <param name="messageType">type number</param>
+        /// <param name="indata">struct of data</param>
+        public void generatePacketbyniam(byte messageType, object indata)
+        {
+            lock (objlock)
+            {
+                byte[] data;
+
+                if (mavlinkversion == 3)
+                {
+                    data = MavlinkUtil.StructureToByteArray(indata);
+                }
+                else
+                {
+                    data = MavlinkUtil.StructureToByteArrayBigEndian(indata);
+                }
+
+                //Console.WriteLine(DateTime.Now + " PC Doing req "+ messageType + " " + this.BytesToRead);
+                byte[] packet = new byte[data.Length + 6 + 2];
+
+                if (mavlinkversion == 3)
+                {
+                    packet[0] = 254;
+                }
+                else if (mavlinkversion == 2)
+                {
+                    packet[0] = (byte)'U';
+                }
+                packet[1] = (byte)data.Length;
+                packet[2] = (byte)packetcount;
+
+                packetcount++;
+
+                packet[3] = 255; // this is always 255 - MYGCS
+                packet[4] = (byte)MAV_COMPONENT.MAV_COMP_ID_MISSIONPLANNER;
+                packet[5] = messageType;
+
+                int i = 6;
+                foreach (byte b in data)
+                {
+                    packet[i] = b;
+                    i++;
+                }
+
+                ushort checksum = MavlinkCRC.crc_calculate(packet, packet[1] + 6);
+
+                if (mavlinkversion == 3)
+                {
+                    checksum = MavlinkCRC.crc_accumulate(MAVLINK_MESSAGE_CRCS[messageType], checksum);
+                }
+
+                byte ck_a = (byte)(checksum & 0xFF); ///< High byte
+                byte ck_b = (byte)(checksum >> 8); ///< Low byte
+
+                packet[i] = ck_a;
+                i += 1;
+                packet[i] = ck_b;
+                i += 1;
+
+                /*
+                if (BaseStream.IsOpen)
+                {
+                    BaseStream.Write(packet, 0, i);
+                    _bytesSentSubj.OnNext(i);
+                }
+
+                try
+                {
+                    if (logfile != null && logfile.BaseStream.CanWrite)
+                    {
+                        lock (logfile)
+                        {
+                            byte[] datearray = BitConverter.GetBytes((UInt64)((DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalMilliseconds * 1000));
+                            Array.Reverse(datearray);
+                            logfile.Write(datearray, 0, datearray.Length);
+                            logfile.Write(packet, 0, i);
+                        }
+                    }
+
+                }
+                 
+                catch { }
+                 * */
                 /*
                 if (messageType == ArdupilotMega.MAVLink.MAVLINK_MSG_ID_REQUEST_DATA_STREAM)
                 {

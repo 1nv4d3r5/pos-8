@@ -6,12 +6,12 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Mission Planner")]
-[assembly: AssemblyDescription("Mission Planner")]
+[assembly: AssemblyTitle("EEPISat-GCS")]
+[assembly: AssemblyDescription("EEPISat-GCS")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Michael Oborne")]
-[assembly: AssemblyProduct("Mission Planner")]
-[assembly: AssemblyCopyright("Copyright © Michael Oborne 2010-2013")]
+[assembly: AssemblyCompany("EEPISat-GCS")]
+[assembly: AssemblyProduct("EEPISat-GCS")]
+[assembly: AssemblyCopyright("EEPISat-GCS")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

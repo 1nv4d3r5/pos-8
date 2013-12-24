@@ -42,6 +42,9 @@ namespace ArdupilotMega.GCSViews
 
         public static FlightPlanner instance = null;
 
+        GMapMarker marker;
+
+
         List<PointLatLngAlt> pointlist = new List<PointLatLngAlt>(); // used to calc distance
         static public Object thisLock = new Object();
         private ComponentResourceManager rm = new ComponentResourceManager(typeof(FlightPlanner));
@@ -160,7 +163,7 @@ namespace ArdupilotMega.GCSViews
             }
 
             // dragging a WP
-            if (pointno == "Home")
+            if (pointno == "EEPISat GCS")
             {
                 if (isonline && CHK_geheight.Checked)
                 {
@@ -649,9 +652,11 @@ namespace ArdupilotMega.GCSViews
             panelWaypoints.Expand = false;
 
             timer1.Start();
+
+            
         }
 
-        void parser_ElementAdded(object sender, SharpKml.Base.ElementEventArgs e)
+        public void parser_ElementAdded(object sender, SharpKml.Base.ElementEventArgs e)
         {
             processKML(e.Element);
         }
@@ -2143,6 +2148,8 @@ namespace ArdupilotMega.GCSViews
         {
             PointLatLng point = MainMap.FromLocalToLatLng(e.X, e.Y);
 
+            
+
             if (start == point)
                 return;
 
@@ -2220,6 +2227,13 @@ namespace ArdupilotMega.GCSViews
                     }
                 }
             }
+
+            PointLatLng niampoint = new PointLatLng(-7.287500, 112.802500);
+
+            marker = new GMapMarkerRect(niampoint);
+            marker.ToolTip = new GMapToolTip(marker);
+            marker.ToolTipMode = MarkerTooltipMode.Always;
+            marker.ToolTipText = "Stasiun Bumi EEPISat";
 
         }
 
@@ -4201,7 +4215,7 @@ namespace ArdupilotMega.GCSViews
             }
         }
 
-        private void kMLOverlayToolStripMenuItem_Click(object sender, EventArgs e)
+        public void kMLOverlayToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
             OpenFileDialog fd = new OpenFileDialog();
@@ -4216,8 +4230,8 @@ namespace ArdupilotMega.GCSViews
                     kmlpolygons.Polygons.Clear();
                     kmlpolygons.Routes.Clear();
 
-                    FlightData.kmlpolygons.Routes.Clear();
-                    FlightData.kmlpolygons.Polygons.Clear();
+                    NanosatEEPIS.kmlpolygons.Routes.Clear();
+                    NanosatEEPIS.kmlpolygons.Polygons.Clear();
 
                     string kml = new StreamReader(File.OpenRead(file)).ReadToEnd();
 
@@ -4226,17 +4240,17 @@ namespace ArdupilotMega.GCSViews
                     var parser = new SharpKml.Base.Parser();
 
                     parser.ElementAdded += parser_ElementAdded;
-                    parser.ParseString(kml, true);
+                    parser.ParseString(kml, false);
 
-                    if (DialogResult.Yes == CustomMessageBox.Show("Do you want to load this into the flight data screen?", "Load data", MessageBoxButtons.YesNo))
+                    if (DialogResult.Yes == CustomMessageBox.Show("Tampilkan di GCS Utama?", "Ambil Data", MessageBoxButtons.YesNo))
                     {
                         foreach (var temp in kmlpolygons.Polygons)
                         {
-                            FlightData.kmlpolygons.Polygons.Add(temp);
+                            NanosatEEPIS.kmlpolygons.Polygons.Add(temp);
                         }
                         foreach (var temp in kmlpolygons.Routes)
                         {
-                            FlightData.kmlpolygons.Routes.Add(temp);
+                            NanosatEEPIS.kmlpolygons.Routes.Add(temp);
                         }
                     }
 
@@ -4503,5 +4517,8 @@ namespace ArdupilotMega.GCSViews
 
             CustomMessageBox.Show("Area: " + area + " m2");
         }
+
+        
+        
     }
 }

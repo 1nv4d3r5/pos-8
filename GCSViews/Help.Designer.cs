@@ -29,17 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Help));
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.CHK_showconsole = new System.Windows.Forms.CheckBox();
             this.BUT_updatecheck = new ArdupilotMega.Controls.MyButton();
             this.SuspendLayout();
-            // 
-            // richTextBox1
-            // 
-            resources.ApplyResources(this.richTextBox1, "richTextBox1");
-            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.richTextBox1.DetectUrls = false;
-            this.richTextBox1.Name = "richTextBox1";
             // 
             // CHK_showconsole
             // 
@@ -51,7 +43,11 @@
             // BUT_updatecheck
             // 
             resources.ApplyResources(this.BUT_updatecheck, "BUT_updatecheck");
+            this.BUT_updatecheck.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(226)))), ((int)(((byte)(150)))));
+            this.BUT_updatecheck.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(193)))), ((int)(((byte)(31)))));
             this.BUT_updatecheck.Name = "BUT_updatecheck";
+            this.BUT_updatecheck.Outline = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(148)))), ((int)(((byte)(41)))));
+            this.BUT_updatecheck.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
             this.BUT_updatecheck.UseVisualStyleBackColor = true;
             this.BUT_updatecheck.Click += new System.EventHandler(this.BUT_updatecheck_Click);
             // 
@@ -61,7 +57,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.CHK_showconsole);
             this.Controls.Add(this.BUT_updatecheck);
-            this.Controls.Add(this.richTextBox1);
             this.Name = "Help";
             this.Load += new System.EventHandler(this.Help_Load);
             this.ResumeLayout(false);
@@ -71,7 +66,6 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private ArdupilotMega.Controls.MyButton BUT_updatecheck;
         private System.Windows.Forms.CheckBox CHK_showconsole;
 

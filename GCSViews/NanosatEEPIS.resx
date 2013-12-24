@@ -117,931 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="splitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="splitContainer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="splitBig.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="splitBig.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="splitBig.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="gMap.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="gMap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>814, 244</value>
-  </data>
-  <data name="gMap.streamjpg" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAEttc2NvcmxpYiwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5l
-        dXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABZTeXN0ZW0uSU8uTWVtb3J5
-        U3RyZWFtCgAAAAdfYnVmZmVyB19vcmlnaW4JX3Bvc2l0aW9uB19sZW5ndGgJX2NhcGFjaXR5C19leHBh
-        bmRhYmxlCV93cml0YWJsZQpfZXhwb3NhYmxlB19pc09wZW4dTWFyc2hhbEJ5UmVmT2JqZWN0K19faWRl
-        bnRpdHkHAAAAAAAAAAACAggICAgBAQEBAgAAAAkDAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEKDwMAAAAA
-        AAAAAgs=
-</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="gMap.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gMap.Name" xml:space="preserve">
-    <value>gMap</value>
-  </data>
-  <data name="&gt;&gt;gMap.Type" xml:space="preserve">
-    <value>GMap.NET.WindowsForms.GMapControl, GMap.NET.WindowsForms, Version=1.5.5.5, Culture=neutral, PublicKeyToken=b85b9027b614afef</value>
-  </data>
-  <data name="&gt;&gt;gMap.Parent" xml:space="preserve">
-    <value>splitBig.Panel1</value>
-  </data>
-  <data name="&gt;&gt;gMap.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitBig.Panel1.Name" xml:space="preserve">
-    <value>splitBig.Panel1</value>
-  </data>
-  <data name="&gt;&gt;splitBig.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitBig.Panel1.Parent" xml:space="preserve">
-    <value>splitBig</value>
-  </data>
-  <data name="&gt;&gt;splitBig.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="tableLayoutPanel3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
   <metadata name="bindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>107, 17</value>
-  </metadata>
-  <data name="quickView31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="quickView31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 72</value>
-  </data>
-  <data name="quickView31.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;quickView31.Name" xml:space="preserve">
-    <value>quickView31</value>
-  </data>
-  <data name="&gt;&gt;quickView31.Type" xml:space="preserve">
-    <value>ArdupilotMega.Controls.QuickView, ArdupilotMegaPlanner10, Version=1.1.5074.28428, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;quickView31.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;quickView31.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="quickView34.Location" type="System.Drawing.Point, System.Drawing">
-    <value>648, 3</value>
-  </data>
-  <data name="quickView34.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 72</value>
-  </data>
-  <data name="quickView34.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;quickView34.Name" xml:space="preserve">
-    <value>quickView34</value>
-  </data>
-  <data name="&gt;&gt;quickView34.Type" xml:space="preserve">
-    <value>ArdupilotMega.Controls.QuickView, ArdupilotMegaPlanner10, Version=1.1.5074.28428, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;quickView34.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;quickView34.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="quickView33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 3</value>
-  </data>
-  <data name="quickView33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 72</value>
-  </data>
-  <data name="quickView33.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;quickView33.Name" xml:space="preserve">
-    <value>quickView33</value>
-  </data>
-  <data name="&gt;&gt;quickView33.Type" xml:space="preserve">
-    <value>ArdupilotMega.Controls.QuickView, ArdupilotMegaPlanner10, Version=1.1.5074.28428, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;quickView33.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;quickView33.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="quickView32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>164, 3</value>
-  </data>
-  <data name="quickView32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 72</value>
-  </data>
-  <data name="quickView32.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;quickView32.Name" xml:space="preserve">
-    <value>quickView32</value>
-  </data>
-  <data name="&gt;&gt;quickView32.Type" xml:space="preserve">
-    <value>ArdupilotMega.Controls.QuickView, ArdupilotMegaPlanner10, Version=1.1.5074.28428, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;quickView32.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;quickView32.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 165</value>
-  </data>
-  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>808, 78</value>
-  </data>
-  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
-    <value>tabData</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="quickView31" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="quickView34" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="quickView33" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="quickView32" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,40,Percent,20,Absolute,20" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="tableLayoutPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="tableLayoutPanel2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="quickView21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="quickView21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 72</value>
-  </data>
-  <data name="quickView21.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;quickView21.Name" xml:space="preserve">
-    <value>quickView21</value>
-  </data>
-  <data name="&gt;&gt;quickView21.Type" xml:space="preserve">
-    <value>ArdupilotMega.Controls.QuickView, ArdupilotMegaPlanner10, Version=1.1.5074.28428, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;quickView21.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;quickView21.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="quickView24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>647, 3</value>
-  </data>
-  <data name="quickView24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 72</value>
-  </data>
-  <data name="quickView24.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;quickView24.Name" xml:space="preserve">
-    <value>quickView24</value>
-  </data>
-  <data name="&gt;&gt;quickView24.Type" xml:space="preserve">
-    <value>ArdupilotMega.Controls.QuickView, ArdupilotMegaPlanner10, Version=1.1.5074.28428, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;quickView24.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;quickView24.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="quickView23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 3</value>
-  </data>
-  <data name="quickView23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 72</value>
-  </data>
-  <data name="quickView23.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;quickView23.Name" xml:space="preserve">
-    <value>quickView23</value>
-  </data>
-  <data name="&gt;&gt;quickView23.Type" xml:space="preserve">
-    <value>ArdupilotMega.Controls.QuickView, ArdupilotMegaPlanner10, Version=1.1.5074.28428, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;quickView23.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;quickView23.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="quickView22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>164, 3</value>
-  </data>
-  <data name="quickView22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>299, 72</value>
-  </data>
-  <data name="quickView22.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;quickView22.Name" xml:space="preserve">
-    <value>quickView22</value>
-  </data>
-  <data name="&gt;&gt;quickView22.Type" xml:space="preserve">
-    <value>ArdupilotMega.Controls.QuickView, ArdupilotMegaPlanner10, Version=1.1.5074.28428, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;quickView22.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;quickView22.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 84</value>
-  </data>
-  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>806, 78</value>
-  </data>
-  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
-    <value>tabData</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="quickView21" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="quickView24" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="quickView23" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="quickView22" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,40,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="tableLayoutPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="tableLayoutPanel1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="quickView11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="quickView11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>298, 72</value>
-  </data>
-  <data name="quickView11.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;quickView11.Name" xml:space="preserve">
-    <value>quickView11</value>
-  </data>
-  <data name="&gt;&gt;quickView11.Type" xml:space="preserve">
-    <value>ArdupilotMega.Controls.QuickView, ArdupilotMegaPlanner10, Version=1.1.5074.28428, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;quickView11.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;quickView11.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="quickView13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 3</value>
-  </data>
-  <data name="quickView13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 72</value>
-  </data>
-  <data name="quickView13.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;quickView13.Name" xml:space="preserve">
-    <value>quickView13</value>
-  </data>
-  <data name="&gt;&gt;quickView13.Type" xml:space="preserve">
-    <value>ArdupilotMega.Controls.QuickView, ArdupilotMegaPlanner10, Version=1.1.5074.28428, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;quickView13.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;quickView13.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="quickView12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 3</value>
-  </data>
-  <data name="quickView12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 72</value>
-  </data>
-  <data name="quickView12.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;quickView12.Name" xml:space="preserve">
-    <value>quickView12</value>
-  </data>
-  <data name="&gt;&gt;quickView12.Type" xml:space="preserve">
-    <value>ArdupilotMega.Controls.QuickView, ArdupilotMegaPlanner10, Version=1.1.5074.28428, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;quickView12.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;quickView12.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>805, 78</value>
-  </data>
-  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>tabData</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="quickView11" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="quickView13" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="quickView12" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,40,Percent,20,Percent,40,Absolute,20" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="tabData.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabData.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>812, 177</value>
-  </data>
-  <data name="tabData.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabData.Text" xml:space="preserve">
-    <value>Data Umum</value>
-  </data>
-  <data name="&gt;&gt;tabData.Name" xml:space="preserve">
-    <value>tabData</value>
-  </data>
-  <data name="&gt;&gt;tabData.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabData.Parent" xml:space="preserve">
-    <value>tabControlUmum</value>
-  </data>
-  <data name="&gt;&gt;tabData.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="grafik.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="grafik.Size" type="System.Drawing.Size, System.Drawing">
-    <value>757, 169</value>
-  </data>
-  <data name="grafik.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;grafik.Name" xml:space="preserve">
-    <value>grafik</value>
-  </data>
-  <data name="&gt;&gt;grafik.Type" xml:space="preserve">
-    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.38310, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;grafik.Parent" xml:space="preserve">
-    <value>tabGrafik</value>
-  </data>
-  <data name="&gt;&gt;grafik.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabGrafik.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabGrafik.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabGrafik.Size" type="System.Drawing.Size, System.Drawing">
-    <value>769, 177</value>
-  </data>
-  <data name="tabGrafik.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabGrafik.Text" xml:space="preserve">
-    <value>Data Grafik</value>
-  </data>
-  <data name="&gt;&gt;tabGrafik.Name" xml:space="preserve">
-    <value>tabGrafik</value>
-  </data>
-  <data name="&gt;&gt;tabGrafik.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabGrafik.Parent" xml:space="preserve">
-    <value>tabControlUmum</value>
-  </data>
-  <data name="&gt;&gt;tabGrafik.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Gauge3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="Gauge3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="Gauge3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 3</value>
-  </data>
-  <data name="Gauge3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="Gauge3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 100</value>
-  </data>
-  <data name="Gauge3.TabIndex" type="System.Int32, mscorlib">
-    <value>82</value>
-  </data>
-  <data name="&gt;&gt;Gauge3.Name" xml:space="preserve">
-    <value>Gauge3</value>
-  </data>
-  <data name="&gt;&gt;Gauge3.Type" xml:space="preserve">
-    <value>AGaugeApp.AGauge, ArdupilotMegaPlanner10, Version=1.1.5074.28428, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Gauge3.Parent" xml:space="preserve">
-    <value>tabStatHard</value>
-  </data>
-  <data name="&gt;&gt;Gauge3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Gauge2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="Gauge2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="Gauge2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 3</value>
-  </data>
-  <data name="Gauge2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="Gauge2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 100</value>
-  </data>
-  <data name="Gauge2.TabIndex" type="System.Int32, mscorlib">
-    <value>81</value>
-  </data>
-  <data name="&gt;&gt;Gauge2.Name" xml:space="preserve">
-    <value>Gauge2</value>
-  </data>
-  <data name="&gt;&gt;Gauge2.Type" xml:space="preserve">
-    <value>AGaugeApp.AGauge, ArdupilotMegaPlanner10, Version=1.1.5074.28428, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Gauge2.Parent" xml:space="preserve">
-    <value>tabStatHard</value>
-  </data>
-  <data name="&gt;&gt;Gauge2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Gauge1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="Gauge1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="Gauge1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="Gauge1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="Gauge1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 100</value>
-  </data>
-  <data name="Gauge1.TabIndex" type="System.Int32, mscorlib">
-    <value>80</value>
-  </data>
-  <data name="&gt;&gt;Gauge1.Name" xml:space="preserve">
-    <value>Gauge1</value>
-  </data>
-  <data name="&gt;&gt;Gauge1.Type" xml:space="preserve">
-    <value>AGaugeApp.AGauge, ArdupilotMegaPlanner10, Version=1.1.5074.28428, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Gauge1.Parent" xml:space="preserve">
-    <value>tabStatHard</value>
-  </data>
-  <data name="&gt;&gt;Gauge1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tabStatHard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabStatHard.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabStatHard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>769, 177</value>
-  </data>
-  <data name="tabStatHard.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabStatHard.Text" xml:space="preserve">
-    <value>Status Hardware</value>
-  </data>
-  <data name="&gt;&gt;tabStatHard.Name" xml:space="preserve">
-    <value>tabStatHard</value>
-  </data>
-  <data name="&gt;&gt;tabStatHard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabStatHard.Parent" xml:space="preserve">
-    <value>tabControlUmum</value>
-  </data>
-  <data name="&gt;&gt;tabStatHard.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tabAll.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>769, 177</value>
-  </data>
-  <data name="tabAll.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tabAll.Text" xml:space="preserve">
-    <value>All</value>
-  </data>
-  <data name="&gt;&gt;tabAll.Name" xml:space="preserve">
-    <value>tabAll</value>
-  </data>
-  <data name="&gt;&gt;tabAll.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabAll.Parent" xml:space="preserve">
-    <value>tabControlUmum</value>
-  </data>
-  <data name="&gt;&gt;tabAll.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tabControlUmum.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="tabControlUmum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 4</value>
-  </data>
-  <data name="tabControlUmum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>820, 203</value>
-  </data>
-  <data name="tabControlUmum.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabControlUmum.Name" xml:space="preserve">
-    <value>tabControlUmum</value>
-  </data>
-  <data name="&gt;&gt;tabControlUmum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControlUmum.Parent" xml:space="preserve">
-    <value>splitBig.Panel2</value>
-  </data>
-  <data name="&gt;&gt;tabControlUmum.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitBig.Panel2.Name" xml:space="preserve">
-    <value>splitBig.Panel2</value>
-  </data>
-  <data name="&gt;&gt;splitBig.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitBig.Panel2.Parent" xml:space="preserve">
-    <value>splitBig</value>
-  </data>
-  <data name="&gt;&gt;splitBig.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="splitBig.Size" type="System.Drawing.Size, System.Drawing">
-    <value>820, 461</value>
-  </data>
-  <data name="splitBig.SplitterDistance" type="System.Int32, mscorlib">
-    <value>250</value>
-  </data>
-  <data name="splitBig.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitBig.Name" xml:space="preserve">
-    <value>splitBig</value>
-  </data>
-  <data name="&gt;&gt;splitBig.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitBig.Parent" xml:space="preserve">
-    <value>splitContainer1.Panel1</value>
-  </data>
-  <data name="&gt;&gt;splitBig.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
-    <value>splitContainer1.Panel1</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel1.Parent" xml:space="preserve">
-    <value>splitContainer1</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="splitSmall.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="splitSmall.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="splitSmall.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="checkBoxGrafik.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBoxGrafik.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 20pt</value>
-  </data>
-  <data name="checkBoxGrafik.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 48</value>
-  </data>
-  <data name="checkBoxGrafik.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 35</value>
-  </data>
-  <data name="checkBoxGrafik.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="checkBoxGrafik.Text" xml:space="preserve">
-    <value>Data Grafik</value>
-  </data>
-  <data name="&gt;&gt;checkBoxGrafik.Name" xml:space="preserve">
-    <value>checkBoxGrafik</value>
-  </data>
-  <data name="&gt;&gt;checkBoxGrafik.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBoxGrafik.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;checkBoxGrafik.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="checkDataSatelit.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkDataSatelit.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 20pt</value>
-  </data>
-  <data name="checkDataSatelit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="checkDataSatelit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 7</value>
-  </data>
-  <data name="checkDataSatelit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 35</value>
-  </data>
-  <data name="checkDataSatelit.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="checkDataSatelit.Text" xml:space="preserve">
-    <value>Data Satelit</value>
-  </data>
-  <data name="&gt;&gt;checkDataSatelit.Name" xml:space="preserve">
-    <value>checkDataSatelit</value>
-  </data>
-  <data name="&gt;&gt;checkDataSatelit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkDataSatelit.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;checkDataSatelit.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 300</value>
-  </data>
-  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>ToolBox</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 300</value>
-  </data>
-  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 326</value>
-  </data>
-  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
-    <value>splitSmall.Panel1</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitSmall.Panel1.Name" xml:space="preserve">
-    <value>splitSmall.Panel1</value>
-  </data>
-  <data name="&gt;&gt;splitSmall.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitSmall.Panel1.Parent" xml:space="preserve">
-    <value>splitSmall</value>
-  </data>
-  <data name="&gt;&gt;splitSmall.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitSmall.Panel2.Name" xml:space="preserve">
-    <value>splitSmall.Panel2</value>
-  </data>
-  <data name="&gt;&gt;splitSmall.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitSmall.Panel2.Parent" xml:space="preserve">
-    <value>splitSmall</value>
-  </data>
-  <data name="&gt;&gt;splitSmall.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="splitSmall.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 461</value>
-  </data>
-  <data name="splitSmall.SplitterDistance" type="System.Int32, mscorlib">
-    <value>251</value>
-  </data>
-  <data name="splitSmall.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitSmall.Name" xml:space="preserve">
-    <value>splitSmall</value>
-  </data>
-  <data name="&gt;&gt;splitSmall.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitSmall.Parent" xml:space="preserve">
-    <value>splitContainer1.Panel2</value>
-  </data>
-  <data name="&gt;&gt;splitSmall.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
-    <value>splitContainer1.Panel2</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
-    <value>splitContainer1</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 461</value>
-  </data>
-  <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
-    <value>820</value>
-  </data>
-  <data name="splitContainer1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
-    <value>splitContainer1</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="currentStateBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>238, 17</value>
   </metadata>
   <metadata name="TGrafik.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="ZedGraphTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>435, 17</value>
+    <value>228, 17</value>
   </metadata>
   <metadata name="contextMenuStripMap.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>563, 18</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="goHereToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 22</value>
   </data>
@@ -1081,11 +169,869 @@
   <data name="&gt;&gt;contextMenuStripMap.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <metadata name="serialPortTX.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>736, 18</value>
+  </metadata>
+  <data name="splitContainer2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="grafik.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="grafik.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 190</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="grafik.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;grafik.Name" xml:space="preserve">
+    <value>grafik</value>
+  </data>
+  <data name="&gt;&gt;grafik.Type" xml:space="preserve">
+    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.13449, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;grafik.Parent" xml:space="preserve">
+    <value>splitContainer2.Panel1</value>
+  </data>
+  <data name="&gt;&gt;grafik.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel1.Name" xml:space="preserve">
+    <value>splitContainer2.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tableLayoutPanel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="tableLayoutPanel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="quickView31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="quickView31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 72</value>
+  </data>
+  <data name="quickView31.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;quickView31.Name" xml:space="preserve">
+    <value>quickView31</value>
+  </data>
+  <data name="&gt;&gt;quickView31.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.13467, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView31.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;quickView31.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="quickView34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>403, 3</value>
+  </data>
+  <data name="quickView34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 72</value>
+  </data>
+  <data name="quickView34.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;quickView34.Name" xml:space="preserve">
+    <value>quickView34</value>
+  </data>
+  <data name="&gt;&gt;quickView34.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.13467, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView34.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;quickView34.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="quickView33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 3</value>
+  </data>
+  <data name="quickView33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 72</value>
+  </data>
+  <data name="quickView33.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;quickView33.Name" xml:space="preserve">
+    <value>quickView33</value>
+  </data>
+  <data name="&gt;&gt;quickView33.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.13467, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView33.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;quickView33.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="quickView32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 3</value>
+  </data>
+  <data name="quickView32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 72</value>
+  </data>
+  <data name="quickView32.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;quickView32.Name" xml:space="preserve">
+    <value>quickView32</value>
+  </data>
+  <data name="&gt;&gt;quickView32.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.13467, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView32.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;quickView32.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 165</value>
+  </data>
+  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 97</value>
+  </data>
+  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
+    <value>splitContainer2.Panel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="quickView31" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="quickView34" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="quickView33" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="quickView32" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,40,Percent,20,Absolute,20" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tableLayoutPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="tableLayoutPanel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="quickView21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="quickView21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 72</value>
+  </data>
+  <data name="quickView21.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;quickView21.Name" xml:space="preserve">
+    <value>quickView21</value>
+  </data>
+  <data name="&gt;&gt;quickView21.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.13467, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView21.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;quickView21.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="quickView24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>403, 3</value>
+  </data>
+  <data name="quickView24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 72</value>
+  </data>
+  <data name="quickView24.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;quickView24.Name" xml:space="preserve">
+    <value>quickView24</value>
+  </data>
+  <data name="&gt;&gt;quickView24.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.13467, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView24.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;quickView24.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="quickView23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 3</value>
+  </data>
+  <data name="quickView23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 72</value>
+  </data>
+  <data name="quickView23.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;quickView23.Name" xml:space="preserve">
+    <value>quickView23</value>
+  </data>
+  <data name="&gt;&gt;quickView23.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.13467, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView23.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;quickView23.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="quickView22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 3</value>
+  </data>
+  <data name="quickView22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 72</value>
+  </data>
+  <data name="quickView22.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;quickView22.Name" xml:space="preserve">
+    <value>quickView22</value>
+  </data>
+  <data name="&gt;&gt;quickView22.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.13467, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView22.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;quickView22.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 84</value>
+  </data>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 97</value>
+  </data>
+  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>splitContainer2.Panel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="quickView21" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="quickView24" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="quickView23" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="quickView22" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,40,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tableLayoutPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="tableLayoutPanel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="quickView11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="quickView11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 72</value>
+  </data>
+  <data name="quickView11.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;quickView11.Name" xml:space="preserve">
+    <value>quickView11</value>
+  </data>
+  <data name="&gt;&gt;quickView11.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.13467, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView11.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;quickView11.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="quickView13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 3</value>
+  </data>
+  <data name="quickView13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 72</value>
+  </data>
+  <data name="quickView13.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;quickView13.Name" xml:space="preserve">
+    <value>quickView13</value>
+  </data>
+  <data name="&gt;&gt;quickView13.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.13467, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView13.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;quickView13.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="quickView12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 3</value>
+  </data>
+  <data name="quickView12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 72</value>
+  </data>
+  <data name="quickView12.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;quickView12.Name" xml:space="preserve">
+    <value>quickView12</value>
+  </data>
+  <data name="&gt;&gt;quickView12.Type" xml:space="preserve">
+    <value>ArdupilotMega.Controls.QuickView, EEPISat-GCS, Version=1.1.5105.13467, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quickView12.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;quickView12.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 97</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>splitContainer2.Panel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="quickView11" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="quickView13" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="quickView12" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,40,Percent,20,Percent,40,Absolute,20" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.Name" xml:space="preserve">
+    <value>splitContainer2.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>669, 196</value>
+  </data>
+  <data name="splitContainer2.SplitterDistance" type="System.Int32, mscorlib">
+    <value>304</value>
+  </data>
+  <data name="splitContainer2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Name" xml:space="preserve">
+    <value>splitContainer2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Parent" xml:space="preserve">
+    <value>tabData</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabData.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>676, 174</value>
+  </data>
+  <data name="tabData.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabData.Text" xml:space="preserve">
+    <value>Data Umum</value>
+  </data>
+  <data name="&gt;&gt;tabData.Name" xml:space="preserve">
+    <value>tabData</value>
+  </data>
+  <data name="&gt;&gt;tabData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabData.Parent" xml:space="preserve">
+    <value>tabControlUmum</value>
+  </data>
+  <data name="&gt;&gt;tabData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabGrafik.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabGrafik.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabGrafik.Size" type="System.Drawing.Size, System.Drawing">
+    <value>676, 174</value>
+  </data>
+  <data name="tabGrafik.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabGrafik.Text" xml:space="preserve">
+    <value>Data Grafik</value>
+  </data>
+  <data name="&gt;&gt;tabGrafik.Name" xml:space="preserve">
+    <value>tabGrafik</value>
+  </data>
+  <data name="&gt;&gt;tabGrafik.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabGrafik.Parent" xml:space="preserve">
+    <value>tabControlUmum</value>
+  </data>
+  <data name="&gt;&gt;tabGrafik.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabStatHard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabStatHard.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabStatHard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>676, 174</value>
+  </data>
+  <data name="tabStatHard.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabStatHard.Text" xml:space="preserve">
+    <value>Status Hardware</value>
+  </data>
+  <data name="&gt;&gt;tabStatHard.Name" xml:space="preserve">
+    <value>tabStatHard</value>
+  </data>
+  <data name="&gt;&gt;tabStatHard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabStatHard.Parent" xml:space="preserve">
+    <value>tabControlUmum</value>
+  </data>
+  <data name="&gt;&gt;tabStatHard.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>676, 174</value>
+  </data>
+  <data name="tabAll.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabAll.Text" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="&gt;&gt;tabAll.Name" xml:space="preserve">
+    <value>tabAll</value>
+  </data>
+  <data name="&gt;&gt;tabAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabAll.Parent" xml:space="preserve">
+    <value>tabControlUmum</value>
+  </data>
+  <data name="&gt;&gt;tabAll.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabControlUmum.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="tabControlUmum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 4</value>
+  </data>
+  <data name="tabControlUmum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>684, 200</value>
+  </data>
+  <data name="tabControlUmum.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;tabControlUmum.Name" xml:space="preserve">
+    <value>tabControlUmum</value>
+  </data>
+  <data name="&gt;&gt;tabControlUmum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControlUmum.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;tabControlUmum.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="splitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="splitContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="splitContainer1.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="splitContainer3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 3</value>
+  </data>
+  <data name="splitContainer3.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="miniTerminal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 1</value>
+  </data>
+  <data name="miniTerminal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>434, 98</value>
+  </data>
+  <data name="miniTerminal.TabIndex" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="miniTerminal.Text" xml:space="preserve">
+    <value>niamtamami</value>
+  </data>
+  <data name="&gt;&gt;miniTerminal.Name" xml:space="preserve">
+    <value>miniTerminal</value>
+  </data>
+  <data name="&gt;&gt;miniTerminal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miniTerminal.Parent" xml:space="preserve">
+    <value>splitContainer3.Panel1</value>
+  </data>
+  <data name="&gt;&gt;miniTerminal.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Gauge1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="Gauge1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="Gauge1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 1</value>
+  </data>
+  <data name="Gauge1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Gauge1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 100</value>
+  </data>
+  <data name="Gauge1.TabIndex" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="&gt;&gt;Gauge1.Name" xml:space="preserve">
+    <value>Gauge1</value>
+  </data>
+  <data name="&gt;&gt;Gauge1.Type" xml:space="preserve">
+    <value>AGaugeApp.AGauge, EEPISat-GCS, Version=1.1.5105.13467, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Gauge1.Parent" xml:space="preserve">
+    <value>splitContainer3.Panel1</value>
+  </data>
+  <data name="&gt;&gt;Gauge1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Gauge2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="Gauge2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="Gauge2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 0</value>
+  </data>
+  <data name="Gauge2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Gauge2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 100</value>
+  </data>
+  <data name="Gauge2.TabIndex" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="&gt;&gt;Gauge2.Name" xml:space="preserve">
+    <value>Gauge2</value>
+  </data>
+  <data name="&gt;&gt;Gauge2.Type" xml:space="preserve">
+    <value>AGaugeApp.AGauge, EEPISat-GCS, Version=1.1.5105.13467, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Gauge2.Parent" xml:space="preserve">
+    <value>splitContainer3.Panel1</value>
+  </data>
+  <data name="&gt;&gt;Gauge2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Gauge3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="Gauge3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="Gauge3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, -1</value>
+  </data>
+  <data name="Gauge3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Gauge3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 100</value>
+  </data>
+  <data name="Gauge3.TabIndex" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="&gt;&gt;Gauge3.Name" xml:space="preserve">
+    <value>Gauge3</value>
+  </data>
+  <data name="&gt;&gt;Gauge3.Type" xml:space="preserve">
+    <value>AGaugeApp.AGauge, EEPISat-GCS, Version=1.1.5105.13467, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Gauge3.Parent" xml:space="preserve">
+    <value>splitContainer3.Panel1</value>
+  </data>
+  <data name="&gt;&gt;Gauge3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;splitContainer3.Panel1.Name" xml:space="preserve">
+    <value>splitContainer3.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer3.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer3.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer3</value>
+  </data>
+  <data name="&gt;&gt;splitContainer3.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="checkBoxMiniTerminal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxMiniTerminal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="checkBoxMiniTerminal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBoxMiniTerminal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="checkBoxMiniTerminal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 24</value>
+  </data>
+  <data name="checkBoxMiniTerminal.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="checkBoxMiniTerminal.Text" xml:space="preserve">
+    <value>Mini Terminal</value>
+  </data>
+  <data name="&gt;&gt;checkBoxMiniTerminal.Name" xml:space="preserve">
+    <value>checkBoxMiniTerminal</value>
+  </data>
+  <data name="&gt;&gt;checkBoxMiniTerminal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxMiniTerminal.Parent" xml:space="preserve">
+    <value>splitContainer3.Panel2</value>
+  </data>
+  <data name="&gt;&gt;checkBoxMiniTerminal.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="checkDataSatelit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkDataSatelit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="checkDataSatelit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkDataSatelit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 3</value>
+  </data>
+  <data name="checkDataSatelit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 24</value>
+  </data>
+  <data name="checkDataSatelit.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="checkDataSatelit.Text" xml:space="preserve">
+    <value>Data Satelit</value>
+  </data>
+  <data name="&gt;&gt;checkDataSatelit.Name" xml:space="preserve">
+    <value>checkDataSatelit</value>
+  </data>
+  <data name="&gt;&gt;checkDataSatelit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkDataSatelit.Parent" xml:space="preserve">
+    <value>splitContainer3.Panel2</value>
+  </data>
+  <data name="&gt;&gt;checkDataSatelit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gMap.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 3</value>
+  </data>
+  <data name="gMap.Size" type="System.Drawing.Size, System.Drawing">
+    <value>669, 146</value>
+  </data>
+  <data name="gMap.streamjpg" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEttc2NvcmxpYiwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5l
+        dXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABZTeXN0ZW0uSU8uTWVtb3J5
+        U3RyZWFtCgAAAAdfYnVmZmVyB19vcmlnaW4JX3Bvc2l0aW9uB19sZW5ndGgJX2NhcGFjaXR5C19leHBh
+        bmRhYmxlCV93cml0YWJsZQpfZXhwb3NhYmxlB19pc09wZW4dTWFyc2hhbEJ5UmVmT2JqZWN0K19faWRl
+        bnRpdHkHAAAAAAAAAAACAggICAgBAQEBAgAAAAkDAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEKDwMAAAAA
+        AAAAAgs=
+</value>
+  </data>
+  <data name="gMap.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;gMap.Name" xml:space="preserve">
+    <value>gMap</value>
+  </data>
+  <data name="&gt;&gt;gMap.Type" xml:space="preserve">
+    <value>GMap.NET.WindowsForms.GMapControl, GMap.NET.WindowsForms, Version=1.5.5.5, Culture=neutral, PublicKeyToken=b85b9027b614afef</value>
+  </data>
+  <data name="&gt;&gt;gMap.Parent" xml:space="preserve">
+    <value>splitContainer3.Panel2</value>
+  </data>
+  <data name="&gt;&gt;gMap.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer3.Panel2.Name" xml:space="preserve">
+    <value>splitContainer3.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer3.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer3.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer3</value>
+  </data>
+  <data name="&gt;&gt;splitContainer3.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>668, 290</value>
+  </data>
+  <data name="splitContainer3.SplitterDistance" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="splitContainer3.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;splitContainer3.Name" xml:space="preserve">
+    <value>splitContainer3</value>
+  </data>
+  <data name="&gt;&gt;splitContainer3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer3.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>684, 461</value>
+  </data>
+  <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
+    <value>253</value>
+  </data>
+  <data name="splitContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>84</value>
+    <value>55</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -1094,18 +1040,12 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 461</value>
+    <value>684, 461</value>
   </data>
   <data name="&gt;&gt;bindingSource.Name" xml:space="preserve">
     <value>bindingSource</value>
   </data>
   <data name="&gt;&gt;bindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;currentStateBindingSource.Name" xml:space="preserve">
-    <value>currentStateBindingSource</value>
-  </data>
-  <data name="&gt;&gt;currentStateBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TGrafik.Name" xml:space="preserve">
@@ -1150,10 +1090,16 @@
   <data name="&gt;&gt;flightPlannerToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;serialPortTX.Name" xml:space="preserve">
+    <value>serialPortTX</value>
+  </data>
+  <data name="&gt;&gt;serialPortTX.Type" xml:space="preserve">
+    <value>System.IO.Ports.SerialPort, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>NanosatEEPIS</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MyUserControl, ArdupilotMegaPlanner10, Version=1.1.5074.28428, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.MyUserControl, EEPISat-GCS, Version=1.1.5105.13467, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

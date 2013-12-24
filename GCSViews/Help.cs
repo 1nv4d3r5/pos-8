@@ -34,7 +34,7 @@ namespace ArdupilotMega.GCSViews
 
         private void Help_Load(object sender, EventArgs e)
         {
-            richTextBox1.Rtf = new ComponentResourceManager(this.GetType()).GetString("help_text");
+            
         }
     }
 }
